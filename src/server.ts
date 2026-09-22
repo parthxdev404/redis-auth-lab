@@ -1,8 +1,8 @@
-import "dotenv/config";
 import app from "./app";
 import redis from "./config/redis";
+import { env } from "./config/env";
 
-const PORT = process.env.PORT || 5000;
+const PORT = env.PORT || 5000;
 
 const startServer = async (): Promise<void> => {
   try {
