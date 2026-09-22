@@ -7,3 +7,5 @@ app.use(express.json());
 app.use("/health", (_req, res) => {
   res.send("Server is healthy");
 });
+
+export default app;
